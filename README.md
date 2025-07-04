@@ -1,3 +1,24 @@
+## The Fork Version
+
+I have replaced the Telegram link with Bale Messenger's link for easier usage. Additionally, I created a Dockerfile to run it in a more restricted environment. For safety reasons, it is highly recommended to use such environments.
+
+## Usage:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd BaleShell
+   ```
+2. Modify the `app/config.txt` file as explained by the author.
+3. Build the Docker image:
+    ```bash
+    docker build -t my-bale-bot .
+    ```
+4. Run the Docker container:
+   ```bash
+   docker run -v $(pwd)/app:/app my-bale-bot
+   ```
+
 # remoteTelegramShell
 remoteTelegramShell is a remote shell for Linux that makes use of Telegram's conection to send commands and receive their output from the computer.
 This tool is specially useful if you want to connect to a computer that is behind a private network without opening ports or just want to control your computer through Telegram, without using any ssh client.
