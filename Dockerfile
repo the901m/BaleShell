@@ -11,4 +11,4 @@ WORKDIR /app
 
 COPY . .
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["python3", "app/baleshell.py"]
